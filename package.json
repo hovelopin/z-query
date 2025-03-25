@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "z-query",
   "private": true,
   "scripts": {
     "build": "turbo run build",
