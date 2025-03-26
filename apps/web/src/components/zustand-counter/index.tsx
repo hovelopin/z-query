@@ -1,6 +1,6 @@
 import { useCounterStore } from "../../store/zustand/use-couter-store"
 
-export default function Counter(){
+export default function ZustandCounter(){
   const count = useCounterStore((state) => state.count)
   const increment = useCounterStore((state) => state.increment)
   const decrement = useCounterStore((state) => state.decrement)
