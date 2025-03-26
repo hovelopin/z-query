@@ -4,7 +4,8 @@ import './App.css'
 // import Counter from './components/zustand-counter'
 // import ReduxCounter from './components/redux-counter'
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-import TodoList from './components/tanstack-query/use-query';
+// import TodoList from './components/tanstack-query/use-query';
+import AddTodo from './components/tanstack-query/use-mutation';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -23,7 +24,8 @@ function App() {
       <QueryClientProvider client={queryClient}>
         {/* <ZustandCounter /> */}
         {/* <ReduxCounter /> */}
-        <TodoList />
+        {/* <TodoList /> */}
+        <AddTodo />
         <ReactQueryDevtools initialIsOpen={false} position="bottom" />
       </QueryClientProvider>
     </>
